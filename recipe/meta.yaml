@@ -7,7 +7,7 @@ package:
 
 source:
   fn: constructor-{{ version }}.tar.gz
-  url: https://github.com/conda/constructor/archive/{{ version }}.tar.gz
+  url: https://github.com/sci-bots/constructor/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -43,4 +43,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - jakirkham
+    - cfobel
