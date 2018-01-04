@@ -1,5 +1,5 @@
-{% set version = "2.0.1" %}
-{%set sha256 = "b8dfc86aa9da735f49eef85b875ce05ffac6e15504dae179288f14e08c084998" %}
+{% set version = "2.0.1.post1" %}
+{%set sha256 = "7443c30c5b9eea49dc0213706d8d4f68e1875396117d06ae801a142003697ee2" %}
 
 package:
   name: constructor
@@ -25,7 +25,7 @@ requirements:
     - python
     - conda
     - ruamel_yaml
-    - pillow >=3.1     # [win]
+    - pillow >=3.0     # [win]
     - nsis >=3.01      # [win]
 
 test:
