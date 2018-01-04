@@ -14,7 +14,7 @@ env:
     - CONDA_PY=36
   global:
     # The BINSTAR_TOKEN secure variable. This is defined canonically in conda-forge.yml.
-    - secure: "3tHakRkiwk8c+cAUp+AnAEUy7lK1M1xypBk/qlyD+1oAykOQMQRbBYAj24z+W7pi2ghJBPWnvIzOhrpPeByal4RuQJn730I9fa7lDgtIHWMxdzugBfQrbMEidhM2PprmtqHh7qJVq04XCUb/ztvkw/S4Y0w4jVzTuKZmAdbNsMc7wKDcpxLLpSIzaGMAd6ZznU/OouOmP1z14yertK/m6qT5kiKHAAvmKmZDniFG7uToqZX54HoMD7ErHhq0Kx9y4bHmhqC7eH3bIC3N6/ojYBVpjegn34W8fSTBFq/Hv4viMJOGKXdxRM8wAGIqX1mlWO5DJ5XrP6hoGavElDHraQLWSW11najhzZlPou61cZfChRS2RGjCG8JoYaZgSIqofykf2WpdK0z/Nx2VKAB8WHEIw07iVolDicGYXlh5wDL+8NcpwT8BYE/ghlUE7rld6xFbVcb7cF/N5DYzT6l+jXwoVXH2EoVG8aEegwfVeDGGQqsYctdGtgWYu5XSDKuMhO+E9t9Qh7g3p3qqekA+/g0puG76+hdW5B+SnmjKujhHlGB5SqOqfX9wK/OsJpmtTk1XkscgrFmXggRyxP/7CE093+IU7VE8/Kyf6qXhHCr1Psp68BJdxwsznFC6sTzbp8MlRSNGFPm4WJ4aH2/zkn9fZGcit5dD2RtHRrSYLQI="
+    - secure: "SqbOa02wJo3dyUoeHEPEXGj7+WUwcyk2lNT9hF0ox6TvduVkFyMB/sA5NJNos6ZB75GH5Kf9GnBF8U4G0E9q1mVSV30/u0hVerCa4BXrd24BZETfIty1LiRB/vPjplqh1//fdocyAwF4rggt/3E4WByS7RG3NtuCR6E1WnRRDl5xhdvy2hit+lyTBVbOVPzcEJf5IiAmmIkOQywZykpOziyxAVjjmPf+fXI0jHlArpStwBYybOx8qvIvTI3Qbj4LlrmXNnaGQluLZHeOADM2HVXzqJe7CCZzOOAppQOgP19UDZ/5zcT7tuRcL6Qack4QVVMLaxeextL7U259yOW38n/gLUq21m9PSh0VZPLB/FPWrrlILEL1blHWiCVR8z5A2tR1LJzLhZ7ACMgQOXIKWh3WbP6Y4f6oM40La90sUd4eWFkZm1ENBjVWO785VIxpfN5xHE+Vjw/5BS5DDl/Q6K8ThdZlqGNch3MUrVXmg0CLRz2lK8xPtw9gIJ7rFMj+jxJND+in9CE2KJuxdJEpBGToZz98ked1qs9ePbIJxyNlIfuomwhiU/jEyn+izRqcTVRjqNRSEzCVAvCp60E/9vai2t6lnXIhAePtqzyzpDAg2JDlIcxR5oIK+/1k4BVwhoaW42EvR2ash6JDu23K35uojXSXxayBa5hi2q1VOrk="
 
 
 before_install:
@@ -58,4 +58,4 @@ install:
 script:
   - conda build ./recipe
 
-  - upload_or_check_non_existence ./recipe conda-forge --channel=main
+  - upload_or_check_non_existence ./recipe sci-bots --channel=main

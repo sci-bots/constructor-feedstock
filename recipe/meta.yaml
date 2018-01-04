@@ -1,5 +1,5 @@
-{% set version = "2.0.1" %}
-{%set sha256 = "b8dfc86aa9da735f49eef85b875ce05ffac6e15504dae179288f14e08c084998" %}
+{% set version = "2.0.1.post1" %}
+{%set sha256 = "7443c30c5b9eea49dc0213706d8d4f68e1875396117d06ae801a142003697ee2" %}
 
 package:
   name: constructor
@@ -7,11 +7,11 @@ package:
 
 source:
   fn: constructor-{{ version }}.tar.gz
-  url: https://github.com/conda/constructor/archive/{{ version }}.tar.gz
+  url: https://github.com/sci-bots/constructor/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record=record.txt
   entry_points:
     - constructor = constructor.main:main
@@ -25,14 +25,18 @@ requirements:
     - python
     - conda
     - ruamel_yaml
-    - pillow >=3.1     # [win]
+    # XXX Workaround for issue conda/constructor#151
+    - pillow ==3.0     # [win]
     - nsis >=3.01      # [win]
 
 test:
   imports:
     - constructor
-  commands:
-    - constructor --test
+  # XXX Disable test command until the following issues are fixed:
+  #  - conda/constructor#152
+  #  - conda/constructor#153
+  #commands:
+    #- constructor --test
 
 about:
   home: http://github.com/conda/constructor
@@ -43,4 +47,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - jakirkham
+    - cfobel
