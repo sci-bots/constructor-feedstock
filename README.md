@@ -20,19 +20,19 @@ Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-f
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/cfobel/constructor/badges/version.svg)](https://anaconda.org/cfobel/constructor)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/cfobel/constructor/badges/downloads.svg)](https://anaconda.org/cfobel/constructor)
+Version: [![Anaconda-Server Badge](https://anaconda.org/sci-bots/constructor/badges/version.svg)](https://anaconda.org/sci-bots/constructor)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/sci-bots/constructor/badges/downloads.svg)](https://anaconda.org/sci-bots/constructor)
 
 Installing constructor
 ======================
 
-Installing `constructor` from the `cfobel` channel can be achieved by adding `cfobel` to your channels with:
+Installing `constructor` from the `sci-bots` channel can be achieved by adding `sci-bots` to your channels with:
 
 ```
-conda config --add channels cfobel
+conda config --add channels sci-bots
 ```
 
-Once the `cfobel` channel has been enabled, `constructor` can be installed with:
+Once the `sci-bots` channel has been enabled, `constructor` can be installed with:
 
 ```
 conda install constructor
@@ -41,7 +41,7 @@ conda install constructor
 It is possible to list all of the versions of `constructor` available on your platform with:
 
 ```
-conda search constructor --channel cfobel
+conda search constructor --channel sci-bots
 ```
 
 
@@ -55,8 +55,8 @@ package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
-`cfobel` channel, whereupon the built conda packages will be available for
-everybody to install and use from the `cfobel` channel.
+`sci-bots` channel, whereupon the built conda packages will be available for
+everybody to install and use from the `sci-bots` channel.
 Note that all branches in the conda-forge/constructor-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
