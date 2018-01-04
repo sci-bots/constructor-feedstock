@@ -31,8 +31,11 @@ requirements:
 test:
   imports:
     - constructor
-  commands:
-    - constructor --test
+  # XXX Disable test command until the following issues are fixed:
+  #  - conda/constructor#152
+  #  - conda/constructor#153
+  #commands:
+    #- constructor --test
 
 about:
   home: http://github.com/conda/constructor
